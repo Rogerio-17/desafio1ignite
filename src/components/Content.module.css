@@ -1,0 +1,27 @@
+.content {
+    background: var(--gray-400);
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+.content input {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    appearance: none;
+    border: 3px solid var(--blue-300)
+}
+
+.content1 {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: var(--gray-100);
+}
+
+.delete {
+    color: var(--gray-300);
+}
