@@ -1,0 +1,26 @@
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    margin: auto;
+    margin-top: 1.5rem;
+    border-top: 1px solid var(--gray-300);
+    padding-top: 5rem;
+    max-width: 46rem;
+    color: var(--gray-300);
+}
+
+.content img {
+    margin-bottom: 1.5rem;
+    width: 3.75rem;
+}
+
+.content span {
+    font-weight: bold;
+}
+
+.content p {
+    margin-top: 0.2rem;
+}

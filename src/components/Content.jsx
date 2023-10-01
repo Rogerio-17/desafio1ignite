@@ -1,7 +1,7 @@
-import { CheckCircle, Trash } from "phosphor-react";
+import { Trash } from "phosphor-react";
 import style from "./Content.module.css";
 
-export function Content({task, handleVerifyTask}) {
+export function Content({task, handleVerifyTask, handleDelete}) {
 
   return (
     <div>
@@ -13,8 +13,6 @@ export function Content({task, handleVerifyTask}) {
         style={{ textDecoration: task.isCompleted ? "line-through" : "" }}
         onClick={() => handleVerifyTask(task.isCompleted, task.id)}
         />
-        
-
 
         <p style={{ textDecoration: task.isCompleted ? "line-through" : "" }}>
           {task.content}
@@ -22,7 +20,7 @@ export function Content({task, handleVerifyTask}) {
       </div>
 
       <div className={style.delete}>
-        <Trash size={24} />
+        <Trash onClick={() => handleDelete(task.id)} size={24} />
       </div>
     </div>
     </div>
