@@ -1,5 +1,4 @@
 import style from "./Task.module.css"
-import { Content } from "./Content";
 
 export function Task() {
   return (
@@ -15,10 +14,6 @@ export function Task() {
         <div className={style.completed}>
             Concluídas <span>2 de 5</span>
         </div>
-      </div>
-
-      <div>
-        <Content/>
       </div>
     </div>
   );

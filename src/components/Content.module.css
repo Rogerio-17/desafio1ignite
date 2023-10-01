@@ -1,4 +1,6 @@
 .content {
+    max-width: 46rem;
+    margin: auto;
     background: var(--gray-400);
     margin-top: 1.5rem;
     display: flex;
@@ -8,12 +10,30 @@
 }
 
 .content input {
-    width: 20px;
-    height: 20px;
+    width: 1.25rem;
+    height: 1.25rem;
     border-radius: 50%;
     appearance: none;
     border: 3px solid var(--blue-300)
 }
+
+.content input:checked {
+    background-color: var(--blue-dark-600); 
+    background-image: url("../assets/check.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 0.8rem;
+    border: var(--blue-dark-600);
+}
+
+.content .label {
+    display: inline-block;
+    width: 1.6rem;
+    height: 1.6rem; 
+    margin-right: 8px; 
+}
+
+
 
 .content1 {
     display: flex;
